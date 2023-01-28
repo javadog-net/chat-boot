@@ -1,0 +1,25 @@
+2023-01-28 11:55:48.414  INFO 12512 --- [main] net.javadog.chat.ChatApplication         : Starting ChatApplication on SKY-20220221JUC with PID 12512 (E:\workgit\javadog\example\chat-boot\chat-boot-main\target\classes started by Administrator in E:\workgit\javadog\example\chat-boot)
+2023-01-28 11:55:48.419  INFO 12512 --- [main] net.javadog.chat.ChatApplication         : The following profiles are active: dev
+2023-01-28 11:55:49.248  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7001 (http)
+2023-01-28 11:55:49.256  INFO 12512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-28 11:55:49.256  INFO 12512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-01-28 11:55:49.317  INFO 12512 --- [main] o.a.c.c.C.[.[localhost].[/chat/v1]       : Initializing Spring embedded WebApplicationContext
+2023-01-28 11:55:49.317  INFO 12512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2023-01-28 11:55:49.573  INFO 12512 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-01-28 11:55:49.627  INFO 12512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-01-28 11:55:49.739  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7001 (http) with context path '/chat/v1'
+2023-01-28 11:55:49.741  INFO 12512 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-01-28 11:55:49.755  INFO 12512 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-01-28 11:55:49.784  INFO 12512 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-01-28 11:55:49.890  INFO 12512 --- [main] net.javadog.chat.ChatApplication         : Started ChatApplication in 2.044 seconds (JVM running for 2.812)
+2023-01-28 11:55:49.892  INFO 12512 --- [main] net.javadog.chat.ChatApplication         : 
+----------------------------------------------------------
+	欢迎访问  	https://blog.javadog.net
+	示例程序【dev】环境已启动! 地址如下:
+	Local: 		http://localhost:7001/chat/v1
+	External: 	http://192.168.117.1:7001/chat/v1
+Swagger文档: 	http://192.168.117.1:7001/chat/v1/doc.html
+----------------------------------------------------------
+2023-01-28 11:57:44.023  INFO 12512 --- [http-nio-7001-exec-2] o.a.c.c.C.[.[localhost].[/chat/v1]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-28 11:57:44.023  INFO 12512 --- [http-nio-7001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-28 11:57:44.035  INFO 12512 --- [http-nio-7001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
