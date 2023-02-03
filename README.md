@@ -824,12 +824,6 @@ server:
     </dependencyManagement>
 
     <dependencies>
-        <!-- 项目基础依赖 -->
-        <dependency>
-            <groupId>net.javadog.chat</groupId>
-            <artifactId>chat-boot-dependencies</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
         <!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
