@@ -826,8 +826,8 @@ server:
     <dependencies>
         <!-- 项目基础依赖 -->
         <dependency>
-            <groupId>net.javadog.bkb</groupId>
-            <artifactId>bkb-boot-dependencies</artifactId>
+            <groupId>net.javadog.chat</groupId>
+            <artifactId>chat-boot-dependencies</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <!-- web -->
