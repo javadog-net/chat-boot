@@ -18,21 +18,22 @@
 公众号：**JavaDog程序狗**
 **在公众号，发送【分层】 ，无任何套路即可获得**
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a19d79aa9f1544a79d3feec43937f500~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/a19d79aa9f1544a79d3feec43937f500_tplv-k3u1fbpfcp-zoom-1.png)
+
 或访问[https://blog.javadog.net/archives/boot-module](https://blog.javadog.net/archives/boot-module)
 
 ### 🍩水图
 > 下图反面教材，传统单体应用，结构臃肿
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9da77e3b292744caae19877e670a8c18~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/9da77e3b292744caae19877e670a8c18_tplv-k3u1fbpfcp-zoom-1.png)
 
 
 > 下图分层截选自本人的一个小项目，模块清晰，分工明确
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8438a89a9c18453288906bb2a24193e3~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/8438a89a9c18453288906bb2a24193e3_tplv-k3u1fbpfcp-zoom-1.png)
 > 我们要实现的小栗子的分层
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e5cd2443144420b872420e36ee395fd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/3e5cd2443144420b872420e36ee395fd_tplv-k3u1fbpfcp-zoom-1.png)
 
 
 ##  正文
@@ -43,19 +44,20 @@
 
 >点击New->project 
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/115c384d8c774993aefb56a8c5082942~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/115c384d8c774993aefb56a8c5082942_tplv-k3u1fbpfcp-zoom-1.png)
 >选择**Maven项**目，并选择**合适JDK版本**,点击Next
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ecb922c35064dcdaf4d6ed7f5a83af3~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/6ecb922c35064dcdaf4d6ed7f5a83af3_tplv-k3u1fbpfcp-zoom-1.png)
+
 >录入项目名称，并填写GAV坐标，点击Finish
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/98406fcff2a44f2f9b31ec68a871c69b~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/98406fcff2a44f2f9b31ec68a871c69b_tplv-k3u1fbpfcp-zoom-1.png)
 >删除无用文件及目录，如src目录和*.iml文件
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca9e2d157fa54500b586ab9949c24d80~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/ca9e2d157fa54500b586ab9949c24d80_tplv-k3u1fbpfcp-zoom-1.png)
 >删除后项目目录
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3da965a6a75f435792402d30d330178c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/3da965a6a75f435792402d30d330178c_tplv-k3u1fbpfcp-zoom-1.png)
 >修改pom.xml中依赖，增加spring-boot-starter-parent
 ```xml
  <parent>
@@ -64,7 +66,7 @@
      <version>2.3.1.RELEASE</version>
  </parent>
 ```
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/559cedac0d9d4abf8f29436817a21b5d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/559cedac0d9d4abf8f29436817a21b5d_tplv-k3u1fbpfcp-zoom-1.png)
 
 
 ******
@@ -72,21 +74,22 @@
 
 >右击项目chat-boot，new ->Moudle新建模块chat-boot-dependencies
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/166303358e63409690de8865c823c75e~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/166303358e63409690de8865c823c75e_tplv-k3u1fbpfcp-zoom-1.png)
+
 >选择对应Module SDK版本，本人选择jdk1.8
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/329503c3d25e41ab9b070fd18f3c8c8d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/329503c3d25e41ab9b070fd18f3c8c8d_tplv-k3u1fbpfcp-zoom-1.png)
 >填写子模块名 chat-boot-dependencies，然后检查对应GAV，点击Finish
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2a3aedb828a544d8a6f9d47d74d9e8dd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/2a3aedb828a544d8a6f9d47d74d9e8dd_tplv-k3u1fbpfcp-zoom-1.png)
 
 >生成子模块**chat-boot-dependencies**如下图
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e8da0e8774043e4b27f6e085c3d016f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/5e8da0e8774043e4b27f6e085c3d016f_tplv-k3u1fbpfcp-zoom-1.png)
 
 >删除**chat-boot-dependencies**下无用文件及目录，如src目录，删除无用目录如下
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57a6f971ba284dfca38bb4714bc9e5c8~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/57a6f971ba284dfca38bb4714bc9e5c8_tplv-k3u1fbpfcp-zoom-1.png)
 
 
 >完善**chat-boot-dependencies**下pom.xml依赖， **常用依赖**放入，作为**依赖主体**，以下是本狗常用依赖，可酌情选择；**记得把packaging改为pom**
@@ -230,17 +233,17 @@
 ### 🍪3.创建子模块-main(主启动层)
 >右击项目chat-boot，new ->Moudle新建模块chat-boot-main
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b702215d47c4b1a9ef46f19521cedbd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/8b702215d47c4b1a9ef46f19521cedbd_tplv-k3u1fbpfcp-zoom-1.png)
 >选择对应Module SDK版本，本狗选择jdk1.8，点击Next
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/35dfccfe08b744d5b0ad598b1e45b73c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/329503c3d25e41ab9b070fd18f3c8c8d_tplv-k3u1fbpfcp-zoom-1.png)
 
 >填写子模块名 chat-boot-main，然后检查对应GAV，点击Finish
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5abde94615a6444b9bfde39ebaf1cba2~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/5abde94615a6444b9bfde39ebaf1cba2_tplv-k3u1fbpfcp-zoom-1.png)
 >生成子模块chat-boot-main如下图
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b75169fb0f645eba46bb975636b03eb~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/3b75169fb0f645eba46bb975636b03eb_tplv-k3u1fbpfcp-zoom-1.png)
 
 >完善chat-boot-main模块下pom.xml中依赖
 
@@ -458,18 +461,20 @@
  </profiles>
 ```
 操作可在IDEA右上角方便切换环境
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d5f86d05d974bc984be4a106b23d7b3~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/8b702215d47c4b1a9ef46f19521cedbd_tplv-k3u1fbpfcp-zoom-1.png)
  💥切记一定主动Reload一下Maven依赖
+
  💥切记一定主动Reload一下Maven依赖
+
  💥切记一定主动Reload一下Maven依赖
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94bd78bc34c449dabcac88711a7e74ca~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/94bd78bc34c449dabcac88711a7e74ca_tplv-k3u1fbpfcp-zoom-1.png)
 
 >在chat-boot-main模块中加入启动类，在src/main/java下右键New=>Java Class
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f38538a75127412a97739b85b15dd692~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/f38538a75127412a97739b85b15dd692_tplv-k3u1fbpfcp-zoom-1.png)
 >录入启动类名ChatApplication
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f362699829a49a1b845adb8d701b67c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/8f362699829a49a1b845adb8d701b67c_tplv-k3u1fbpfcp-zoom-1.png)
 >完善ChatApplication启动类代码
 
 ```java
@@ -527,7 +532,7 @@ public class ChatApplication {
 
 >配置application.yml文件
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/09b71ab3e8994bf9b7ee73cb6ef5f2d9~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/09b71ab3e8994bf9b7ee73cb6ef5f2d9_tplv-k3u1fbpfcp-zoom-1.png)
 **application.yml**
 ```yml
 #============================#
@@ -763,26 +768,26 @@ server:
 
 >启动一下项目试试，启动如下证明成功。如果报错少依赖请再拉一下Maven依赖！！！
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/34805bf633184191bcff39cdbc873cf5~tplv-k3u1fbpfcp-zoom-1.image)
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db27c4a8853747278ba21cf6c0e3564d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/34805bf633184191bcff39cdbc873cf5_tplv-k3u1fbpfcp-zoom-1.png)
+![](https://img.javadog.net/blog/chat-boot/db27c4a8853747278ba21cf6c0e3564d_tplv-k3u1fbpfcp-zoom-1.png)
 
 ******
 ### 🍇4.创建子模块-module(模块层)
 >右击项目chat-boot，new ->Moudle新建模块chat-boot-module
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca91224be5024716aa7b939fa9bc7896~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/ca91224be5024716aa7b939fa9bc7896_tplv-k3u1fbpfcp-zoom-1.png)
 >填写子模块名 chat-boot-module，然后检查对应GAV，点击Finish
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0d64434c00404150bae16343cef9bf7c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/0d64434c00404150bae16343cef9bf7c_tplv-k3u1fbpfcp-zoom-1.png)
 >生成子模块**chat-boot-module**如下图
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9bccd0d6c614f6d8fbc1f39c3ac7187~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/b9bccd0d6c614f6d8fbc1f39c3ac7187_tplv-k3u1fbpfcp-zoom-1.png)
 >删除**chat-boot-module**下无用文件及目录，如src目录，删除无用目录如下
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/04dcc4a2883847c882c9d79b7eaa995c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/04dcc4a2883847c882c9d79b7eaa995c_tplv-k3u1fbpfcp-zoom-1.png)
 >自此外部大框架初步搭建成功
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4c39ae69513457296057683cdbb331d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/e4c39ae69513457296057683cdbb331d~tplv-k3u1fbpfcp-zoom-1.png)
 >完善chat-boot-module下pom.xml依赖，如lombok，web等必要依赖
 
 ```xml
@@ -888,7 +893,7 @@ server:
 **一定要重新拉取依赖！**
 **一定要重新拉取依赖！**
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ccc0ab6aee949c3aba540225597ee25~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/5ccc0ab6aee949c3aba540225597ee25~tplv-k3u1fbpfcp-zoom-1.png)
 
 
 ******
@@ -910,36 +915,36 @@ server:
 **一定看清楚父模块是否正确**
 **一定看清楚父模块是否正确**
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2d992f2fd8af4b539b00818fcbe4b1c2~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/2d992f2fd8af4b539b00818fcbe4b1c2~tplv-k3u1fbpfcp-zoom-1.png)
 >确认父级模块后，点击Finish，生成chat-boot-common模块
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b324a5c8fa0745c1bae60fb0d8831aac~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/b324a5c8fa0745c1bae60fb0d8831aac~tplv-k3u1fbpfcp-zoom-1.png)
 >依次按照上述方法，新建其他模块
 
 **chat-boot-controller**模块
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b67249001b534ec482a17de31b451d0f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/b67249001b534ec482a17de31b451d0f~tplv-k3u1fbpfcp-zoom-1.png)
 
 **chat-boot-dao**模块
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e28ce0ab5c0436b9c738e0a1a24d9d8~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/5e28ce0ab5c0436b9c738e0a1a24d9d8~tplv-k3u1fbpfcp-zoom-1.png)
 
 **chat-boot-dto**模块
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f91780eebb81423281f1aefce569011f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/f91780eebb81423281f1aefce569011f~tplv-k3u1fbpfcp-zoom-1.png)
 
 **chat-boot-entity**模块
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d7f8d8bc358441049d5d344ccc844a09~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/f91780eebb81423281f1aefce569011f~tplv-k3u1fbpfcp-zoom-1.png)
 
 **chat-boot-service**模块
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d4ce9cf15a4a431b90b06fd44b34c60d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/d4ce9cf15a4a431b90b06fd44b34c60d~tplv-k3u1fbpfcp-zoom-1.png)
 > 总体模块雏形基本完成
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/15f76a9669844f1ca0ef9baf9f363c23~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/15f76a9669844f1ca0ef9baf9f363c23~tplv-k3u1fbpfcp-zoom-1.png)
 ### 🍧6.实际流程填充
 - 模拟正常**前端请求**到**后台服务调用过程**，进行实际代码补充
 
 >在chat-boot-entity下新建实体类User，在src/main/java下右键New=>Java Class，录入包名及类名
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1d49aab60d8492eba82eb060a7d5cf2~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/e1d49aab60d8492eba82eb060a7d5cf2~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat.entity;
 
@@ -964,7 +969,7 @@ public class User {
 ******
 >在chat-boot-dto下新建目**request和response**，分别代表**请求传输对象和返回传输对象**，并分别在目录下创建UserRequest.java和UserResponse.java
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d8447978ab1492daccc028767c01be5~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/4d8447978ab1492daccc028767c01be5~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat.request;
 
@@ -1003,7 +1008,7 @@ public class UserResponse {
 ```
 ******
 >在chat-boot-dao下修改chat-boot-dao模块下修改pom.xml文件依赖，引入chat-boot-entity;并增对应UserMapper.java
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f897bef03c714f16adc3046214ca7451~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/f897bef03c714f16adc3046214ca7451~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat.mapper;
 
@@ -1054,7 +1059,7 @@ public interface UserMapper extends BaseMapper<User> {
 ******
 >在chat-boot-service下新建目录service和impl，并在对应目录下新建UserService.java和UserServiceImpl.java，并修改chat-boot-service模块下修改pom.xml文件依赖，引入chat-boot-dto,chat-boot-dao
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1bde9607b836418582077bd2bf9011fd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/1bde9607b836418582077bd2bf9011fd~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat.service;
 
@@ -1133,7 +1138,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 ******
 >在chat-boot-controller创建UserController.java,并修改chat-boot-controller模块下修改pom.xml文件依赖，引入chat-boot-dto,chat-boot-service
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bbb1e8a706446ed81f82a399bf75102~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/8bbb1e8a706446ed81f82a399bf75102~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat.controller;
 
@@ -1180,7 +1185,7 @@ public class UserController {
 2.切记修改chat-boot-main下的pom.xml依赖，将chat-boot-dao模块加入
 3.切记修改启动类ChatApplication中加入@MapperScan注解
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/252055b4f4284d6996577e3d576034c1~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/252055b4f4284d6996577e3d576034c1~tplv-k3u1fbpfcp-zoom-1.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1320,7 +1325,7 @@ public class UserController {
     </profiles>
 </project>
 ```
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3f02a69343542d788c97565812b6c2b~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/c3f02a69343542d788c97565812b6c2b~tplv-k3u1fbpfcp-zoom-1.png)
 ```java
 package net.javadog.chat;
 
@@ -1381,7 +1386,7 @@ public class ChatApplication {
 ###  🦔7.示例DB更新
 - 模拟正常**前端请求**到**后台服务调用过程**，进行实际代码补充
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/67401194bb5041efb0086726ce5a0323~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/67401194bb5041efb0086726ce5a0323~tplv-k3u1fbpfcp-zoom-1.png)
 ```sql
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
@@ -1401,13 +1406,13 @@ INSERT INTO `user` VALUES (1, 'JavaDog', '123123');
 
 **测试成功如下图所示**
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bcff48919ff4eb589d89fef5049e6fa~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/3bcff48919ff4eb589d89fef5049e6fa~tplv-k3u1fbpfcp-zoom-1.png)
 
 ## 总结
 以上示例只是简单示范分层思路，其中代码逻辑实现方式有很多种，大家选取适用自己就好，希望自己的思路能对大家有帮助
 
 如遇缺少依赖情况，**一定要重新拉取依赖！**
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11da8bea00ea4eb393337be9260324dd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/chat-boot/11da8bea00ea4eb393337be9260324dd~tplv-k3u1fbpfcp-zoom-1.png)
 ## 写在最后
 此生两悔，悔遇见你，更悔未早遇见你，珍惜当下拥有，勿念昔日美好。
 
